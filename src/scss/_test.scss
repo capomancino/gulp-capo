@@ -1,9 +1,9 @@
 // Тестовый файл
 .body {
-  background-color: #FEF000;
+  background-color: #111;
 }
-// С 1439px до 1200px
-@media (min-width: 1200px) and (max-width: 1440px) {
+// С максимального до 1200px
+@media (min-width: 1200px) {
   .body {
     background-color: cadetblue;
   }
