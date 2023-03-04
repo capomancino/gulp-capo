@@ -1,0 +1,56 @@
+// Dropdown menu mixin
+@mixin dropdown {
+  $black: #000000;
+  $white: #ffffff;
+  $red: #ff0000;
+
+  .menu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .menu__item {
+    position: relative;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .menu__btn {
+    border: none;
+    padding: 5px 10px;
+    color: $white;
+    background-color: $black;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .menu__btn--active {
+    background-color: $red;
+  }
+
+  .dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background-color: $white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .dropdown--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown__link {
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    color: $black;
+  }
+}

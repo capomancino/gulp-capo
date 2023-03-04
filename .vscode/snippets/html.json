@@ -1,0 +1,270 @@
+{
+  "navigation": {
+    "scope": "html",
+    "prefix": "c-nav",
+    "body": [
+      "<nav class=\"nav\" title=\"$1\">",
+      "  <ul class=\"nav__list reset-list\">",
+      "    <li class=\"nav__item\">",
+      "      <a href=\"#\" class=\"nav__link reset-link\"></a>",
+      "    </li>",
+      "    <li class=\"nav__item\">",
+      "      <a href=\"#\" class=\"nav__link reset-link\"></a>",
+      "    </li>",
+      "    <li class=\"nav__item\">",
+      "      <a href=\"#\" class=\"nav__link reset-link\"></a>",
+      "    </li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "Snippet for navigation"
+  },
+
+  "dropdown": {
+    "scope": "html",
+    "prefix": "c-drop",
+    "body": [
+      "<ul class=\"menu reset-list\">",
+      "  <li class=\"menu__item\">",
+      "    <button class=\"menu__btn reset-btn\">${1:Item-1}</button>",
+      "    <div class=\"dropdown\">",
+      "      <ul class=\"dropdown__list reset-list\">",
+      "        <li class=\"dropdown__item\">",
+      "          <a href=\"${2:#}\" class=\"dropdown__link reset-link\">${3:Item-1.1}</a>",
+      "        </li>",
+      "        <li class=\"dropdown__item\">",
+      "          <a href=\"${4:#}\" class=\"dropdown__link reset-link\">${5:Item-1.2}</a>",
+      "        </li>",
+      "        <li class=\"dropdown__item\">",
+      "          <a href=\"${6:#}\" class=\"dropdown__link reset-link\">${7:Item-1.3}</a>",
+      "        </li>",
+      "      </ul>",
+      "    </div>",
+      "  </li>",
+      "  <li class=\"menu__item\"></li>",
+      "  <li class=\"menu__item\"></li>",
+      "</ul>",
+      "Подключите выпадающее меню в файле _functions.js",
+      "Настройте классы \"dropdown--active\" и \"menu__btn--active\""
+    ],
+    "description": "Snippet for menu dropdown"
+  },
+
+  "burger": {
+    "scope": "html",
+    "prefix": "c-burger",
+    "body": [
+      "<button class=\"burger reset-btn\" aria-label=\"Открыть меню\" aria-expanded=\"false\" data-burger>",
+      "  <span class=\"burger__line\"></span>",
+      "</button>",
+      "В меню добавить атрибут [data-menu]",
+      "В SCSS вызвать миксин \"burger\""
+    ],
+    "description": "Snippet for burger btn"
+  },
+
+  "social": {
+    "scope": "html",
+    "prefix": "c-social",
+    "body": [
+      "<ul class=\"social__list reset-list\" title=\"$1\">",
+      "  <li class=\"social__item\">",
+      "    <a class=\"social__link social__link--fb reset-link\" href=\"#\" target=\"_blank\" aria-label=\"Наш Фейсбук\"></a>",
+      "  </li>",
+      "  <li class=\"social__item\">",
+      "    <a class=\"social__link social__link--inst reset-link\" href=\"#\" target=\"_blank\" aria-label=\"Наш Инстаграм\"></a>",
+      "  </li>",
+      "  <li class=\"social__item\">",
+      "    <a class=\"social__link social__link--vk reset-link\" href=\"#\" target=\"_blank\" aria-label=\"Наш ВК\"></a>",
+      "  </li>",
+      "  <li class=\"social__item\">",
+      "    <a class=\"social__link social__link--tw reset-link\" href=\"#\" target=\"_blank\" aria-label=\"Наш Твиттер\"></a>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "Snippet for social links"
+  },
+
+  "graph modal Btn": {
+    "prefix": "c-graph-btn",
+    "body": [
+      "<button class=\"$1 reset-btn\" data-graph-path=\"$2\">$3</button>",
+      "Заполните атрибут [data-graph-path]",
+      "Вызвать сниппет HTML \"c-graph-modal\" и заполните атрибут [data-graph-target]",
+      "Подключите \"graph-modal.min.css\" в файле \"vendor.scss\"",
+      "Подключите библиотеку в файле \"_functions.js\""
+    ],
+    "description": "Snippet for graph-modal btn"
+  },
+
+  "graph modal Structure": {
+    "prefix": "c-graph-modal",
+    "body": [
+      "<div class=\"graph-modal\">",
+      "  <div class=\"graph-modal__container\" role=\"dialog\" aria-modal=\"true\" data-graph-target=\"$1\">",
+      "    <button class=\"graph-modal__close js-modal-close reset-btn\" aria-label=\"Закрыть модальное окно\"></button>",
+      "    <div class=\"graph-modal__content\">$2</div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Snippet for graph-modal basic structure"
+  },
+
+  "basicswiper": {
+    "prefix": "c-swiper",
+    "body": [
+      "<div class=\"swiper $1\">",
+      "  <div class=\"swiper-wrapper $2\">",
+      "    <div class=\"swiper-slide $3\">$4</div>",
+      "    <div class=\"swiper-slide $5\">$6</div>",
+      "    <div class=\"swiper-slide $7\">$8</div>",
+      "  </div>",
+      "  <div class=\"swiper-pagination $9\">$10</div>",
+      "  <div class=\"swiper-button-prev $11\">$12</div>",
+      "  <div class=\"swiper-button-next $13\">$14</div>",
+      "  <div class=\"swiper-scrollbar $15\">$16</div>",
+      "</div>",
+      "Подключите swiper-bundle.min в файле \"vendor.scss\"",
+      "Подключите библиотеку в файле \"_functions.js\""
+    ],
+    "description": "Snippet for basic swiper structure"
+  },
+
+  "basicform": {
+    "prefix": "c-form",
+    "body": [
+      "<form action=\"#\" class=\"form\">",
+      "  <label class=\"form__label\">",
+      "    <input type=\"text\" name=\"Имя\" class=\"form__input input-reset\" placeholder=\"Имя\">",
+      "  </label>",
+      "  <button class=\"form__btn btn-reset\">Отправить</button>",
+      "</form>"
+    ],
+    "description": "Snippet for basic form"
+  },
+
+  "tabs html sctructure": {
+    "prefix": "c-tabs",
+    "body": [
+      "<div class=\"tabs\" data-tabs=\"$1\">",
+      "  <ul class=\"tabs__nav reset-list\">",
+      "    <li class=\"tabs__nav-item\">",
+      "      <button class=\"tabs__nav-btn reset-btn\" type=\"button\">$2</button>",
+      "    </li>",
+      "    <li class=\"tabs__nav-item\">",
+      "      <button class=\"tabs__nav-btn reset-btn\" type=\"button\">$3</button>",
+      "    </li>",
+      "    <li class=\"tabs__nav-item\">",
+      "      <button class=\"tabs__nav-btn reset-btn\" type=\"button\">$4</button>",
+      "    </li>",
+      "  </ul>",
+      "  <div class=\"tabs__content\">",
+      "    <div class=\"tabs__panel\">$5</div>",
+      "    <div class=\"tabs__panel\">$6</div>",
+      "    <div class=\"tabs__panel\">$7</div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Snippet for basic tabs structure"
+  },
+
+  "read-mode": {
+    "scope": "html",
+    "prefix": "c-mode",
+    "body": [
+      "<p>${1:Основной текст}",
+      "  <span id=\"dots\">...</span>",
+      "  <span id=\"more\" style=\"display:none\">${2:Скрытый текст}</span>",
+      "</p>",
+      "<button id=\"btn reset-btn\">${3:Подробнее}</button>",
+      "В span с id=\"dots\" вставьте основной текст, а в span с id=\"more\" - скрытый",
+      "Подключите библиотеку в файле \"_functions.js\""
+    ],
+    "description": "Snippet for menu dropdown"
+  },
+
+  "checkbox": {
+    "scope": "html",
+    "prefix": "c-checkbox",
+    "body": [
+      "<label class=\"custom-checkbox\">",
+      "  <input type=\"checkbox\" class=\"custom-checkbox__field reset-input\">",
+      "  <span class=\"custom-checkbox__content\">$1</span>",
+      "</label>"
+    ],
+    "description": "Snippet for custom checkbox"
+  },
+
+  "radio": {
+    "scope": "html",
+    "prefix": "c-radio",
+    "body": [
+      "<label class=\"custom-radio\">",
+      "  <input type=\"radio\" class=\"custom-radio__field reset-input\">",
+      "  <span class=\"custom-radio__content\">$1</span>",
+      "</label>"
+    ],
+    "description": "Snippet for custom radio"
+  },
+
+  "tooltip": {
+    "prefix": "c-tooltip",
+    "body": [
+      "<span class=\"tooltip\">",
+      "  <button class=\"tooltip__btn reset-btn\" aria-describedby=\"$1\">$2</button>",
+      "  <span class=\"tooltip__txt\" role=\"tooltip\" id=\"$1\">",
+      "    <span class=\"visually-hidden\">Тултип: </span>",
+      "    $3",
+      "  </span>",
+      "</span>",
+      "Заполните атрибуты \"aria-describedby\" и \"id\"",
+      "Подключите библиотеку в файле \"_functions.js\"",
+      "Вместо \"el\" передать \"id\" или \"class\" кнопки тултипа, а вместо \"tooltip\" передать \"id\" или \"class\" самого тултипа"
+    ],
+    "description": "Snippet for tooltip"
+  },
+
+  "picture": {
+    "prefix": "c-picture",
+    "body": [
+      "<picture>",
+      "  <source srcset=\"$1.webp\" type=\"image/webp\">",
+      "  <img class=\"image reset-img\" loading=\"lazy\" src=\"$1.$2\" width=\"$3\" height=\"$4\" alt=\"$5\">",
+      "</picture>"
+    ],
+    "description": "Snippet for basic logo structure"
+  },
+
+  "svgimg": {
+    "scope": "html",
+    "prefix": "c-svgimg",
+    "body": [
+      "<img class=\"image reset-img\" loading=\"lazy\" src=\"$1.$2\" width=\"$3\" height=\"$4\" alt=\"$5\">"
+    ],
+    "description": "Snippet for simple html svg images"
+  },
+
+  "svguse": {
+    "scope": "html",
+    "prefix": "c-use",
+    "body": [
+      "<svg class=\"\">",
+      "  <use xlink:href=\"img/sprite.svg#$2\"></use>",
+      "</svg>"
+    ],
+    "description": "Snippet for use svg sprites"
+  },
+
+  "scroll-up": {
+    "scope": "html",
+    "prefix": "c-scroll",
+    "body": [
+      "<div class=\"scroll scroll--hidden\">",
+      "  <i class=\"fas fa-light fa-chevron-up scroll-icon\"></i>",
+      "</div>",
+      "Вызвать сниппет SCSS \"c-scroll\"",
+      "Подключите библиотеку в файле \"_functions.js\""
+    ],
+    "description": "HTML snippet for scroll"
+  }
+}

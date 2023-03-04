@@ -1,0 +1,46 @@
+// 1. Wrapper
+$wrapper-max: 1920px !default;
+$wrapper-min: 320px !default;
+
+// 2. Container
+$container-max-widths: 1170px;
+$container-padding: 15px;
+
+// 3. Fonts Family
+$font-family: 'Roboto';
+
+// 4. Fonts Weight
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// 5. Fonts Style
+$font-style-normal: normal;
+$font-style-italic: italic;
+
+// 6. Fonts Size
+$font-size: 16px;
+
+// 7. Line Height
+$line-height: 1;
+
+// 8. Colors
+$black: #000000;
+$white: #ffffff;
+$grey: #808080;
+$red: #ff0000;
+
+$color-primary:  #117711;
+$color-secondary:  #570075;
+
+$color-darken: darken( $color-primary, 20% );
+$color-lighten: lighten( $color-secondary, 20% );
+
+$color-primary-hover: darken( $color-primary, 10% );
+$color-secondary-hover: darken( $color-secondary, 8% );

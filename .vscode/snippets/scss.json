@@ -1,0 +1,239 @@
+{
+  "scroll": {
+    "scope": "css, scss",
+    "prefix": "c-scroll",
+    "body": [
+      ".scroll {",
+      "  @include flex-center;",
+      "  width: 65px;",
+      "  height: 65px;",
+      "  position: fixed;",
+      "  right: 50px;",
+      "  bottom: 50px;",
+      "  font-size: 40px;",
+      "  color: $1#ffffff;",
+      "  border-radius: 50%;",
+      "  background: $2#808080;",
+      "  z-index: 100;",
+      "  cursor: pointer;",
+      "  opacity: 1;",
+      "  transition: color 0.5s ease-in-out;",
+      "",
+      "  &:hover {",
+      "    color: $0#000000;",
+      "  }",
+      "",
+      "  &--hidden {",
+      "    opacity: 0;",
+      "  }",
+      "}"
+    ],
+    "description": "SCSS snippet for scroll"
+  },
+
+  "background-color: $1;": {
+    "scope": "css, scss",
+    "prefix": "bg",
+    "body": ["background-color: $1;"],
+    "description": "CSS, SCSS snippet for background"
+  },
+
+  "background-position: center;": {
+    "scope": "css, scss",
+    "prefix": "bgp",
+    "body": ["background-position: center;"],
+    "description": "CSS, SCSS snippet for background"
+  },
+
+  "background-size: cover;": {
+    "scope": "css, scss",
+    "prefix": "bgc",
+    "body": ["background-size: cover;"],
+    "description": "CSS, SCSS snippet for background"
+  },
+
+  "background-repeat: no-repeat;": {
+    "scope": "css",
+    "prefix": "bgn",
+    "body": ["background-repeat: no-repeat;"],
+    "description": "CSS, SCSS snippet for background"
+  },
+
+
+
+
+
+
+
+
+  "border: ${1:0}px solid $2;": {
+    "scope": "css, scss",
+    "prefix": "bs",
+    "body": [
+      "border: ${1:0}px solid $2;"
+    ],
+    "description": "CSS, SCSS snippet for border"
+  },
+
+  "border: none;": {
+    "scope": "css, scss",
+    "prefix": "bn",
+    "body": [
+      "border: none;"
+    ],
+    "description": "CSS, SCSS snippet for border"
+  },
+
+  "border-radius: 0;": {
+    "scope": "css, scss",
+    "prefix": "br",
+    "body": [
+      "border-radius: ${1:0}px;"
+    ],
+    "description": "CSS, SCSS snippet for border"
+  },
+
+  "box-shadow: $1;": {
+    "scope": "css, scss",
+    "prefix": "bsh",
+    "body": [
+      "box-shadow: $1;"
+    ],
+    "description": "CSS, SCSS snippet for box-shadow"
+  },
+
+  "color: $1;": {
+    "scope": "css, scss",
+    "prefix": "c",
+    "body": [
+      "color: $1;"
+    ],
+    "description": "CSS, SCSS snippet for color"
+  },
+
+  "cursor: pointer;": {
+    "scope": "css, scss",
+    "prefix": "cp",
+    "body": [
+      "cursor: pointer;"
+    ],
+    "description": "CSS, SCSS snippet for cursor"
+  },
+
+  "font-weight: 100;": {
+    "scope": "css, scss",
+    "prefix": "fw100",
+    "body": [
+      "font-weight: 1;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "font-weight: 200;": {
+    "scope": "css, scss",
+    "prefix": "fw2",
+    "body": [
+      "font-weight: 200;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "font-weight: 300;": {
+    "scope": "css, scss",
+    "prefix": "fw3",
+    "body": [
+      "font-weight: 300;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "font-weight: 400;": {
+    "scope": "css, scss",
+    "prefix": "fw4",
+    "body": [
+      "font-weight: 400;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "font-weight: 500;": {
+    "scope": "css, scss",
+    "prefix": "fw5",
+    "body": [
+      "font-weight: 500;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "font-weight: 600;": {
+    "scope": "css, scss",
+    "prefix": "fw6",
+    "body": [
+      "font-weight: 600;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "font-weight: 700;": {
+    "scope": "css, scss",
+    "prefix": "fw7",
+    "body": [
+      "font-weight: 700;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "font-weight: 800;": {
+    "scope": "css, scss",
+    "prefix": "fw8",
+    "body": [
+      "font-weight: 800;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "font-weight: 900;": {
+    "scope": "css, scss",
+    "prefix": "fw9",
+    "body": [
+      "font-weight: 900;"
+    ],
+    "description": "CSS, SCSS snippet for font-weight"
+  },
+
+  "overflow: hidden;": {
+    "scope": "css, scss",
+    "prefix": "oh",
+    "body": [
+      "overflow: hidden;"
+    ],
+    "description": "CSS, SCSS snippet for overflow"
+  },
+
+  "overflow-x: hidden;": {
+    "scope": "css, scss",
+    "prefix": "oxh",
+    "body": [
+      "overflow-x: hidden;"
+    ],
+    "description": "CSS, SCSS snippet for overflow"
+  },
+
+  "overflow-y: hidden;": {
+    "scope": "css, scss",
+    "prefix": "oyh",
+    "body": [
+      "overflow-y: hidden;"
+    ],
+    "description": "CSS, SCSS snippet for overflow"
+  },
+
+  "transition: all 1s ease-in-out;": {
+    "scope": "css, scss",
+    "prefix": "tr",
+    "body": [
+      "transition: ${1:all} 0.${0:1}s ease-in-out;"
+    ],
+    "description": "CSS, SCSS snippet for transition"
+  }
+}

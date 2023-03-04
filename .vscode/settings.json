@@ -1,0 +1,73 @@
+{
+  // editor
+  "editor.cursorBlinking": "phase",
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.hover.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.wordSeparators": "`~!@#$%^&*()-_=+[{]}\\|;:'\",.<>/?",
+  "editor.semanticHighlighting.enabled": false,
+  "editor.lightbulb.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // window
+  "window.zoomLevel": 2,
+  // files
+  "files.insertFinalNewline": false,
+  "files.autoSave": "afterDelay",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  // terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // workbench
+  "workbench.tips.enabled": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "newUntitledFile",
+  // explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  // git
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  // emmet
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  // gutterpreview
+  "gutterpreview.showImagePreviewOnGutter": true,
+  "gutterpreview.showUnderline": true,
+  "gutterpreview.currentColorForSVG": "white",
+  "gutterpreview.enableReferenceLookup": true,
+  //
+  // icons
+  "vsicons.dontShowNewVersionMessage": true,
+  // liveServer
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "Chrome",
+  "liveServer.settings.fullReload": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  // indentRainbow
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.3)",
+    "rgba(127,255,127,0.3)",
+    "rgba(255,127,255,0.3)",
+    "rgba(79,236,236,0.3)"
+  ],
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+}

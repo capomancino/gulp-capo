@@ -1,0 +1,6 @@
+// Пробразование px в rem
+$browser-context: 16; // Значение px по умолчанию
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}

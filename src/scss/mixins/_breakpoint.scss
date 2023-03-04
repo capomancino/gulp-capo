@@ -1,0 +1,31 @@
+// Max-width
+@mixin max($width) {
+  @media(max-width: #{$width}px) {
+    @content;
+  }
+}
+
+// Min-width
+@mixin min($width) {
+  @media(min-width: #{$width}px) {
+    @content;
+  }
+}
+
+/* Large desktops and laptops (Большие настольные компьютеры и ноутбуки) */
+// @media (min-width: 1200px) {}
+
+/* Landscape tablets and medium desktops (Ландшафтные планшеты и средние десктопы) */
+// @media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Portrait tablets and small desktops (Портретные планшеты и маленькие настольные компьютеры) */
+// @media (min-width: 768px) and (max-width: 991px) {}
+
+/* Landscape phones and portrait tablets (Телефоны с горизонтальной ориентацией и планшеты с портретной ориентацией) */
+// @media (max-width: 767px) {}
+
+/* Portrait phones and smaller (Портретные телефоны и меньше) */
+// @media (max-width: 480px) {}
+
+/* Iphone 5 */
+// @media (max-width: 320px) {}

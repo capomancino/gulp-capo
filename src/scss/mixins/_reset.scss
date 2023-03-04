@@ -1,0 +1,50 @@
+// Сброс padding, margin
+@mixin reset {
+  padding: 0;
+  margin: 0;
+}
+
+// Сброс для списков
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Сброс для ссылок
+@mixin reset-link {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+// Сброс для кнопок
+@mixin reset-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// Сброс для картинок
+@mixin reset-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+// Сброс для инпутов
+@mixin reset-input {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}

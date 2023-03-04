@@ -1,0 +1,161 @@
+// Общие стили для всей страницы
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Стили для класса "html"
+.html {
+  height: 100%;
+  font-family: $font-family, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+// Стили для класса "body"
+.body {
+  margin: 0;
+}
+
+// Стили для класс "wrapper"
+.wrapper {
+  max-width: $wrapper-max;
+  min-width: $wrapper-min;
+  font-size: $font-size;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+// Стили для класса "container"
+.container {
+  max-width: $container-max-widths + ($container-padding * 2);
+  padding: 0 $container-padding;
+  margin: 0 auto;
+}
+
+// Стили для класса "flex"
+.flex {
+  display: flex;
+}
+
+// Стили для класса "relative"
+.relative {
+  position: relative;
+}
+
+// Стили для класса "reset"
+.reset {
+  padding: 0;
+  margin: 0;
+}
+
+// Стили для класса "reset-link"
+.reset-link {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+// Стили для класса "reset-list"
+.reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Стили для класса "reset-btn"
+.reset-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// Стили для класса "reset-img"
+.reset-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+// Стили для класса "reset-input"
+.reset-input {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+// Стили для класса "title" (title & subtitle)
+// h2 class="section-title" data-heading="Подзаголовок">Заголовок</h2>
+.section-title {
+  @include reset;
+  @include font-roboto-bold;
+  @include font-size(32px, 48px);
+  text-align: left;
+  text-transform: uppercase;
+  color: $color-primary;
+  margin-bottom: 50px;
+
+  &::after {
+    content: attr(data-heading);
+    @include font-roboto-regular;
+    @include font-size(20px, 30px);
+    display: block;
+    text-transform: none;
+    color: $color-secondary;
+    margin-top: 10px;
+  }
+}
+
+// Технические стили
+.is-hidden {
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}

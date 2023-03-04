@@ -1,0 +1,8 @@
+// Поместите настраиваемые сочетания клавиш в этот файл, чтобы переопределить сочетания клавиш по умолчанию.
+[
+  {
+    "key": "ctrl+shift+x",
+    "command": "extension.ecsstractor_port_run",
+    "when": "editorTextFocus"
+  }
+]

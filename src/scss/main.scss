@@ -1,0 +1,23 @@
+// Математическая функция
+@use "sass:math";
+
+// Базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "test";
+
+// Подключения компонентов
+// @import "./components/header";
+
+// Тестовые стили, удалите их
+.wrapper {
+  display: flex;
+}
+
+.main {
+  @include flex-center;
+  @include flex-size(100%);
+  height: 100vh;
+}

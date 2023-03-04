@@ -1,0 +1,34 @@
+// Псевдоэлемент
+@mixin pseudo($content: '') {
+  content: $content;
+  display: block;
+  position: absolute;
+}
+
+// Применение отступа справа кроме последнего элемента
+@mixin mr($value) {
+  &:not(:last-child) {
+    margin-right: $value;
+  }
+}
+
+// Применение отступа слева кроме последнего элемента
+@mixin ml($value) {
+  &:not(:last-child) {
+    margin-left: $value;
+  }
+}
+
+// Применение отступа снизу кроме последнего элемента
+@mixin mb($value) {
+  &:not(:last-child) {
+    margin-bottom: $value;
+  }
+}
+
+// Применение отступа сверу кроме последнего элемента
+@mixin mt($value) {
+  &:not(:last-child) {
+    margin-top: $value;
+  }
+}
