@@ -1,18 +1,40 @@
+// Тестовый файл
 .body {
-  background-color: transparent;
-  background-position: center;
-  background-size: cover;
-  border: 20px solid ;
-  border: none;
-  border-radius: 45px;
-  border: 1px solid transition;
-  border: none;
-  border-radius: 65px;
-  cursor: pointer;
-  overflow-x: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
+  background-color: #111;
+}
+// С максимального до 1200px
+@media (min-width: 1200px) {
+  .body {
+    background-color: cadetblue;
+  }
+}
+// С 1199px до 992px
+@media (min-width: 992px) and (max-width: 1199px) {
+  .body {
+    background-color: burlywood;
+  }
+}
+// С 991px до 768px
+@media (min-width: 768px) and (max-width: 991px) {
+  .body {
+    background-color: aquamarine;
+  }
+}
+// С 767px
+@media (max-width: 767px) {
+  .body {
+    background-color: chartreuse;
+  }
+}
+// С 480px
+@media (max-width: 480px) {
+  .body {
+    background-color: darkorange;
+  }
+}
+// С 320px
+@media (max-width: 320px) {
+  .body {
+    background-color: darkgreen;
+  }
 }
