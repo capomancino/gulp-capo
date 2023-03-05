@@ -9,51 +9,10 @@
   height: 100vh;
 }
 
-.body {
-  background-color: black;
-}
-// С максимального до 1200px
-@media (min-width: 1200px) {
-  .body {
-    background-color: cadetblue;
-  }
-}
-// С 1199px до 992px
-@media (min-width: 992px) and (max-width: 1199px) {
-  .body {
-    background-color: burlywood;
-  }
-}
-// С 991px до 768px
-@media (min-width: 768px) and (max-width: 991px) {
-  .body {
-    background-color: aquamarine;
-  }
-}
-// С 767px
-@media (max-width: 767px) {
-  .body {
-    background-color: chartreuse;
-  }
-}
-// С 480px
-@media (max-width: 480px) {
-  .body {
-    background-color: darkorange;
-  }
-}
-// С 320px
-@media (max-width: 320px) {
-  .body {
-    background-color: darkgreen;
-  }
+.custom-checkbox {
+  @include custom-checkbox;
 }
 
-.box {
-  width: 500px;
-  height: 200px;
-  border: 1px solid gray;
-  box-shadow: $shadow;
-  border: $border;
-  border-radius: $border-radius;
+.custom-radio {
+  @include custom-radio;
 }

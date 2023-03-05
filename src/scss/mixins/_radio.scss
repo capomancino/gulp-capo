@@ -5,7 +5,6 @@
   $red: #ff0000;
 
   position: relative;
-  padding-left: 20px;
   font-family: inherit;
 
   &__field {
@@ -14,7 +13,9 @@
   }
 
   &__content {
+    padding-left: 20px;
     color: $black;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -25,7 +26,7 @@
       width: 16px;
       height: 16px;
       border: 1px solid $red;
-      border-radius: 100%;
+      border-radius: 50%;
     }
 
     &::after {
@@ -39,20 +40,21 @@
       background: $green;
       border-radius: 100%;
       opacity: 0;
+      transition: opacity 0.3s ease-in-out;
     }
   }
-}
 
-.custom-radio__field:checked + .custom-radio__content::after {
-  opacity: 1;
-}
+  &__field:checked + .custom-radio__content::after {
+    opacity: 1;
+  }
 
-.custom-radio__field:focus + .custom-radio__content::before {
-  outline: 2px solid #0000ff;
-  outline-offset: 2px;
-}
+  &__field:focus + .custom-radio__content::before {
+    outline: 2px solid #0000ff;
+    outline-offset: 2px;
+  }
 
-.custom-radio__field:disabled + .custom-radio__content {
-  opacity: 0.4;
-  pointer-events: none;
+  &__field:disabled + .custom-radio__content {
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }
