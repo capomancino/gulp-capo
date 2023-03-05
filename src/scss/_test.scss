@@ -48,3 +48,12 @@
     background-color: darkgreen;
   }
 }
+
+.box {
+  width: 500px;
+  height: 200px;
+  border: 1px solid gray;
+  box-shadow: $shadow;
+  border: $border;
+  border-radius: $border-radius;
+}

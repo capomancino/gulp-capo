@@ -31,14 +31,18 @@ $font-size: 16px;
 $line-height: 1;
 
 // 8. Colors
-$black: #000000;
-$white: #ffffff;
+$color-black: #000000;
+$color-white: #ffffff;
 
-$color-primary:  #117711;
-$color-secondary:  #570075;
+$color-primary: #117711;
+$color-secondary: #570075;
 
-$color-darken: darken( $color-primary, 20% );
-$color-lighten: lighten( $color-secondary, 20% );
+$color-darken: darken($color-primary, 20%);
+$color-lighten: lighten($color-secondary, 20%);
 
-$color-primary-hover: darken( $color-primary, 10% );
-$color-secondary-hover: darken( $color-secondary, 8% );
+// 10. Box Shadow
+$shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+// 10. Border
+$border: 2px solid $color-secondary;
+$border-radius: 20px;
