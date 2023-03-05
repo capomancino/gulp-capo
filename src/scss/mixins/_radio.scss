@@ -43,16 +43,16 @@
   }
 }
 
-.custom-radio__field:checked+.custom-radio__content::after {
+.custom-radio__field:checked + .custom-radio__content::after {
   opacity: 1;
 }
 
-.custom-radio__field:focus+.custom-radio__content::before {
+.custom-radio__field:focus + .custom-radio__content::before {
   outline: 2px solid #0000ff;
   outline-offset: 2px;
 }
 
-.custom-radio__field:disabled+.custom-radio__content {
+.custom-radio__field:disabled + .custom-radio__content {
   opacity: 0.4;
   pointer-events: none;
 }

@@ -35,7 +35,8 @@ html {
 .container {
   max-width: $container-max-widths + ($container-padding * 2);
   padding: 0 $container-padding;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 // Стили для класса "flex"
@@ -92,11 +93,12 @@ html {
   background-color: #ffffff;
 }
 
+// Удаление "крестика" в страке поиска
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
-	display: none;
+  display: none;
 }
 
 // Стили для класса "title" (title & subtitle)
@@ -121,12 +123,13 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
-// Технические стили
+// Класс для полного скрытия элемента
 .is-hidden {
   display: none !important;
   /* stylelint-disable-line declaration-no-important */
 }
 
+// Класс для скрытия элемента
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -138,14 +141,17 @@ input[type="search"]::-webkit-search-results-decoration {
   clip: rect(0 0 0 0);
 }
 
+// Класс для отключения outline
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
 
+// Центрирование текста
 .centered {
   text-align: center;
 }
 
+// Класс для отключения скролла
 .dis-scroll {
   position: fixed;
   left: 0;
@@ -156,6 +162,7 @@ input[type="search"]::-webkit-search-results-decoration {
   overscroll-behavior: none;
 }
 
+// Классы для определения операционной системы на мобильных
 .page--ios .dis-scroll {
   position: relative;
 }
