@@ -59,13 +59,6 @@
     "description": "CSS, SCSS snippet for background"
   },
 
-
-
-
-
-
-
-
   "border: ${1:0}px solid $2;": {
     "scope": "css, scss",
     "prefix": "bs",

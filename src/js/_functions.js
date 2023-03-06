@@ -93,3 +93,6 @@
 
 // Подключение скрытия текста
 // import './functions/read-more';
+
+// Подключение слайдера noUiSlider
+// import './functions/range-slider';
