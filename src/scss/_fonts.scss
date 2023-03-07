@@ -11,3 +11,7 @@
 // Roboto
 @include font-face("Roboto", "Roboto-Regular", 400, normal);
 @include font-face("Roboto", "Roboto-Bold", 700, normal);
+
+// Добавьте здесь все шрифты проекта
+// Создайте миксины для шрифтов в файле _font-face.scss
+// Измените в файле _vars.scss переменную для основного шрифта

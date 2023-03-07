@@ -17,7 +17,7 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   // window
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
   // files
   "files.insertFinalNewline": false,
   "files.autoSave": "afterDelay",
