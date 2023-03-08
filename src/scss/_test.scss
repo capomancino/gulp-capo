@@ -1,11 +1,11 @@
 // Тестовый файл
 
 // Пропорцианальное увеличение блока
-.box {
+.aspect-ratio {
+
   $size: 100px;
   $aspect-ratio: 2;
 
   width: $size;
   height: calc($size / $aspect-ratio);
-  background-color: burlywood;
 }
