@@ -5,17 +5,17 @@
   position: absolute;
 }
 
+// Применение отступа сверу кроме последнего элемента
+@mixin mt($value) {
+  &:not(:last-child) {
+    margin-top: $value;
+  }
+}
+
 // Применение отступа справа кроме последнего элемента
 @mixin mr($value) {
   &:not(:last-child) {
     margin-right: $value;
-  }
-}
-
-// Применение отступа слева кроме последнего элемента
-@mixin ml($value) {
-  &:not(:last-child) {
-    margin-left: $value;
   }
 }
 
@@ -26,9 +26,15 @@
   }
 }
 
-// Применение отступа сверу кроме последнего элемента
-@mixin mt($value) {
+// Применение отступа слева кроме последнего элемента
+@mixin ml($value) {
   &:not(:last-child) {
-    margin-top: $value;
+    margin-left: $value;
   }
+}
+
+// Пропорцианальное увеличение блока
+@mixin aspect-ratio($size, $aspect-ratio) {
+  width: $size;
+  height: calc($size / $aspect-ratio);
 }
